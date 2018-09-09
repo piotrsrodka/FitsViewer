@@ -46,14 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FITS.cs" />
+    <Compile Include="Header.cs" />
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +67,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +81,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\data.png" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\head.png" />
+    <Content Include="Images\img_head.png" />
+    <Content Include="Images\left_arrow.png" />
+    <Content Include="Images\left_arrow2.png" />
+    <Content Include="Images\left_arrow3.png" />
+    <Content Include="Images\next.png" />
+    <Content Include="Images\openFile.png" />
+    <Content Include="Images\openFile1.png" />
+    <Content Include="Images\PerfCenterCpl.ico" />
+    <Content Include="Images\prev.png" />
+    <Content Include="Images\prev2.png" />
+    <Content Include="Images\right_arrow.png" />
+    <Content Include="Images\SVIcon.png" />
+    <None Include="Resources\prev.png" />
+    <None Include="Resources\openFile1.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\img_head.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
