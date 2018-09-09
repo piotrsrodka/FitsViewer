@@ -1,6 +1,6 @@
 ﻿namespace FitsViewer
 {
-    partial class MainForm
+    partial class ViewForm
     {
         /// <summary>
         /// Required designer variable.

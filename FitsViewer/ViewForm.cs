@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace FitsViewer
 {
-    public partial class MainForm : Form
+    public partial class ViewForm : Form
     {
         private FITS _fits;
         private bool _headerMode = false;
@@ -14,7 +14,7 @@ namespace FitsViewer
         private string[] _files;
         private int _currentFile;
 
-        public MainForm(string[] args)
+        public ViewForm(string[] args)
         {
             InitializeComponent();
 
